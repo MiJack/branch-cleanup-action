@@ -28,7 +28,7 @@ main(){
 
 	echo "DEBUG -> action: $action merged: $merged"
 
-	if [[ "$action" != "closed" ]] || [[ "$merged" != "true" ]]; then
+	if [[ "$merged" != "true" ]]; then
 	    exit "$NO_BRANCH_DELETED_EXIT_CODE"
 	fi
 
